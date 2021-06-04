@@ -1,0 +1,16 @@
+.img {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.textbox {
+  padding: 10px;
+  color: black;
+  background-color: rgba(62, 62, 62, 0.057);
+}

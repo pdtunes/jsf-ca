@@ -1,0 +1,27 @@
+.card {
+  border: none;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  height: 300px;
+}
+.card img {
+  border-radius: 10%;
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.body {
+  margin-top: 10px;
+  color: black;
+  background-color: rgba(62, 62, 62, 0.112);
+}

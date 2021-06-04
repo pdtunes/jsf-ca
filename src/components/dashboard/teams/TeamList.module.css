@@ -1,0 +1,79 @@
+.card {
+  border: none;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+}
+.card img {
+  border-radius: 10%;
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.Mercedes {
+  background-color: #00d2be;
+  color: black;
+}
+.Mercedes:hover {
+  color: rgb(255, 174, 0);
+}
+.Ferrari {
+  background-color: #dc0000;
+}
+.Ferrari:hover {
+  color: rgb(255, 174, 0);
+}
+.RedBull {
+  background-color: #0600ef;
+}
+.RedBull:hover {
+  color: rgb(255, 174, 0);
+}
+.Alpine {
+  background-color: #0090ff;
+  color: black;
+}
+.Alpine:hover {
+  color: rgb(255, 174, 0);
+}
+.Haas {
+  background-color: #ffffff;
+  color: black;
+}
+.Haas:hover {
+  color: rgb(255, 174, 0);
+}
+.AstonMartin {
+  background-color: #006f62;
+}
+.AstonMartin:hover {
+  color: rgb(255, 174, 0);
+}
+.AlphaTauri {
+  background-color: #2b4562;
+}
+.AlphaTauri:hover {
+  color: rgb(255, 174, 0);
+}
+.McLaren {
+  background-color: #ff8700;
+  color: black;
+}
+.McLaren:hover {
+  color: rgb(255, 174, 0);
+}
+.AlfaRomeo {
+  background-color: #900000;
+}
+.AlfaRomeo:hover {
+  color: rgb(255, 174, 0);
+}
+.Williams {
+  background-color: #005aff;
+}
+.Williams:hover {
+  color: rgb(255, 174, 0);
+}
