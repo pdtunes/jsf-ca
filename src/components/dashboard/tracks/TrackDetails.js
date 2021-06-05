@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import { Card, Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import styles from "./TrackDetails.module.css";
+import { useHistory } from "react-router-dom";
+import moment from "moment";
 
 export default function TrackDetails() {
   const [track, setTrack] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrormsg] = useState(null);
-
+  let history = useHistory();
   const { id } = useParams();
 
   useEffect(
@@ -40,7 +42,10 @@ export default function TrackDetails() {
 
   return (
     <>
-      <Card key={track.id}>
+      <button className={styles.button} onClick={() => history.goBack()}>
+        Back
+      </button>
+      <Card className={styles.card} key={track.id}>
         <Container className={styles.container}>
           <Card.Img className={styles.img} variant="top" src={track.image} />
           <Card.Body>
@@ -54,7 +59,8 @@ export default function TrackDetails() {
             <Card.Text>
               Race date:{" "}
               <b>
-                {track.from} - {track.to}
+                {moment(track.from).format("DD.MM.YYYY")} -{" "}
+                {moment(track.to).format("DD.MM.YYYY")}
               </b>{" "}
             </Card.Text>{" "}
             <div className={styles.textbox}>

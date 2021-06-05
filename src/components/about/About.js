@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function TrackDetails() {
   return (
     <>
-      <Card>
+      <Card className={styles.card}>
         <Container className={styles.container}>
           <Card.Img
             className={styles.img}

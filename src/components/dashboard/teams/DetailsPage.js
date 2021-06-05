@@ -2,12 +2,14 @@ import { BASE_URL, TEAMS_ENDPOINT } from "../../../constants/api";
 import { useState, useEffect } from "react";
 import { Card, Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import styles from "./DetailsPage.module.css";
+import { useHistory } from "react-router-dom";
 
 export default function DetailsPage() {
   const [team, setTeam] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrormsg] = useState(null);
-
+  let history = useHistory();
   const { id } = useParams();
 
   useEffect(
@@ -39,6 +41,9 @@ export default function DetailsPage() {
 
   return (
     <>
+      <button className={styles.button} onClick={() => history.goBack()}>
+        Back
+      </button>
       <Card key={team.id}>
         <Container>
           <div className="top-images">

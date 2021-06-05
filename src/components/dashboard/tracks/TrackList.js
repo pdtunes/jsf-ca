@@ -4,6 +4,7 @@ import { Card, CardDeck, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./TrackList.module.css";
 import Heading from "../../layout/Heading";
+import moment from "moment";
 
 export default function TrackList() {
   const [tracks, setTracks] = useState([]);
@@ -52,6 +53,8 @@ export default function TrackList() {
                   <Card.Body className={styles.body}>
                     <Card.Title>{track.name}</Card.Title>
                     <Card.Text>{track.country}</Card.Text>
+                    {moment(track.from).format("DD.MM")} -{" "}
+                    {moment(track.to).format("DD.MM")}
                   </Card.Body>
                 </Card>
               </Link>
